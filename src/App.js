@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import React from "react";
+import logo from "./logo.svg";
+import Header from "./components/header/Header";
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+const App = () => {
+  return (<>
+    <Header/>
+  </>);
+};
 
 export default App;
