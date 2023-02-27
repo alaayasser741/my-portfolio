@@ -1,15 +1,18 @@
 import React from "react";
 import logo from "./logo.svg";
 import Header from "./components/header/Header";
-import Home from "./components/home/Home";
+import Index from "./pages/Index";
+import Contact from "./components/contact/Contact";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 const App = () => {
   return (
-    <>
+    <Router>
       <Header />
-      <main className="main">
-        <Home />
-      </main>
-    </>
+      <Routes>
+        <Route exact path="/" element={<Index/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+      </Routes>
+    </Router>
   );
 };
 

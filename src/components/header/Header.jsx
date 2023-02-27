@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './header.css';
+import { Link } from 'react-router-dom';
 import { UilEstate, UilUser, UilFileAlt, UilSuitcaseAlt, UilImage, UilMessage, UilTimes, UilApps } from '@iconscout/react-unicons'
 const Header = () => {
     // Toggle Menu
@@ -8,14 +9,14 @@ const Header = () => {
         <header className="header">
             <nav className="nav container">
                 {/* Logo */}
-                <a href="index.html" className="nav__logo">Alaa</a>
+                <Link to="/" className="nav__logo">Alaa</Link>
                 {/* nav list (menu) */}
                 <div className={toggle ? 'nav__menu show-menu' : 'nav__menu'}>
                     <ul className="nav__list grid">
                         {/* Home */}
                         <li className="nav__item">
-                            <a href="#home" className="nav__link">
-                                <UilEstate className="nav__icon" />Home</a>
+                            <Link to="/" className="nav__link">
+                                <UilEstate className="nav__icon" />Home</Link>
                         </li>
                         {/* About */}
                         <li className="nav__item">
@@ -39,8 +40,8 @@ const Header = () => {
                         </li>
                         {/* Contact */}
                         <li className="nav__item">
-                            <a href="#Contact" className="nav__link">
-                                <UilMessage className="nav__icon" />Contact</a>
+                            <Link to="/contact" className="nav__link">
+                                <UilMessage className="nav__icon" />Contact</Link>
                         </li>
                     </ul>
                     <UilTimes onClick={()=>{showMenu(!toggle)}} className="nav__close" />
