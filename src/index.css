@@ -37,10 +37,10 @@
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
   --mb-0-1: 1rem;
-  --mb-0-1-5: 1.5rem;
-  --mb-0-2: 2rem;
-  --mb-0-2-5: 2.5rem;
-  --mb-0-3: 3rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
 
   /* z-index */
   --z-tooltip: 10;
@@ -164,40 +164,54 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 /* Layout */
+
 .container {
   /* Padding for mobile view */
-  padding-left: 2rem;
-  padding-right: 2rem;
+  max-width: 968px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Small */
-@media (min-width:768px) {
+
+/* For Large Devices */
+@media (max-width:992px) {
   .container {
-    width: 750px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
   }
 }
 
-/* Medium */
-@media (min-width:992px) {
-  .container {
-    width: 950px;
+/* For Medium Devices */
+@media (max-width:768px) {
+  .section {
+    padding: 2rem 0 4rem;
   }
 }
 
-/* Large */
-@media (min-width:1200px) {
+@media (max-width:576px) {}
+
+/* For Small Devices */
+@media (max-width:350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+
   .container {
-    width: 1170px;
+    margin-left: var(--mb-0-1);
+    margin-right: var(--mb-0-1);
   }
 }
 
-@media (min-width:1500px) {
-  .container {
-    width: 1470px;
-  }
-}
+
 
 .grid {
   display: grid;
