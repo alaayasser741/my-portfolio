@@ -19,7 +19,7 @@ const CS = () => {
     }, []);
 
     return (
-        <div className="skills__content">
+        <div className="skills__content" title='Computer Science Skills'>
             <h3 className="skills__title">Computer Science</h3>
             <div className="skills__box">
                 <div className="skills__group">

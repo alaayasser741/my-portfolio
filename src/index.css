@@ -147,6 +147,11 @@ html::-webkit-scrollbar-thumb:hover {
   background: #666;
 }
 
+p,
+span{
+  color: #999;
+}
+
 /* Reusable css Classes */
 .section {
   padding: 6rem 0 2rem;
@@ -161,6 +166,7 @@ html::-webkit-scrollbar-thumb:hover {
   display: block;
   font-size: var(--small-font-size);
   margin-block-end: 4rem;
+  color: #888;
 }
 
 .section__subtitle,
