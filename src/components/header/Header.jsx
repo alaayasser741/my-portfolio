@@ -5,6 +5,12 @@ import { UilEstate, UilUser, UilFileAlt, UilSuitcaseAlt, UilImage, UilMessage, U
 const Header = () => {
     // Toggle Menu
     const [toggle, showMenu] = useState(false);
+    function handleClick(event) {
+        const section = document.querySelector(event.target.hash);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     return (
         <header className="header">
             <nav className="nav container">
@@ -20,23 +26,23 @@ const Header = () => {
                         </li>
                         {/* About */}
                         <li className="nav__item">
-                            <a href="#About" className="nav__link">
-                                <UilUser className="nav__icon" />About</a>
+                            <Link to="/#About" onClick={handleClick} className="nav__link">
+                                <UilUser className="nav__icon" />About</Link>
                         </li>
                         {/* Skills */}
                         <li className="nav__item">
-                            <a href="#Skills" className="nav__link">
-                                <UilFileAlt className="nav__icon" />Skills</a>
+                            <Link to="/#Skills" onClick={handleClick} className="nav__link">
+                                <UilFileAlt className="nav__icon" />Skills</Link>
                         </li>
                         {/* Services */}
                         <li className="nav__item">
-                            <a href="#Services" className="nav__link">
-                                <UilSuitcaseAlt className="nav__icon" />Services</a>
+                            <Link to="/#Services" onClick={handleClick} className="nav__link">
+                                <UilSuitcaseAlt className="nav__icon" />Services</Link>
                         </li>
                         {/* Portfolio */}
                         <li className="nav__item">
-                            <a href="#Portfolio" className="nav__link">
-                                <UilImage className="nav__icon" />Portfolio</a>
+                            <Link to="/#Portfolio" onClick={handleClick} className="nav__link">
+                                <UilImage className="nav__icon" />Portfolio</Link>
                         </li>
                         {/* Contact */}
                         <li className="nav__item">
@@ -44,10 +50,10 @@ const Header = () => {
                                 <UilMessage className="nav__icon" />Contact</Link>
                         </li>
                     </ul>
-                    <UilTimes onClick={()=>{showMenu(!toggle)}} className="nav__close" />
+                    <UilTimes onClick={() => { showMenu(!toggle) }} className="nav__close" />
                 </div>
-                <div onClick={()=>{showMenu(!toggle)}} className="nav__toggle">
-                    <UilApps  />
+                <div onClick={() => { showMenu(!toggle) }} className="nav__toggle">
+                    <UilApps />
                 </div>
             </nav>
         </header>
