@@ -1,0 +1,86 @@
+{
+  "Frontend": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "level": "Advanced"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "level": "Advanced"
+    },
+    {
+      "id": 4,
+      "name": "Bootstrap",
+      "level": "Intermediate"
+    },
+    {
+      "id": 5,
+      "name": "Git",
+      "level": "Intermediate"
+    },
+    {
+      "id": 6,
+      "name": "React",
+      "level": "Intermediate"
+    },
+    {
+      "id": 7,
+      "name": "SCSS",
+      "level": "Advanced"
+    },
+    {
+      "id": 8,
+      "name": "Ajax",
+      "level": "Intermediate"
+    }
+  ],
+  "CS": [
+    {
+      "id": 1,
+      "name": "Problem Solving",
+      "level": "Intermediate"
+    },
+    {
+      "id": 2,
+      "name": "Data Structure",
+      "level": "Basics"
+    },
+    {
+      "id": 3,
+      "name": "Algorithm",
+      "level": "Basics"
+    },
+    {
+      "id": 4,
+      "name": "Operating System",
+      "level": "Basics"
+    },
+    {
+      "id": 5,
+      "name": "AI",
+      "level": "Basics"
+    },
+    {
+      "id": 6,
+      "name": "DataBase",
+      "level": "Basics"
+    },
+    {
+      "id": 7,
+      "name": "Network",
+      "level": "Basics"
+    },
+    {
+      "id": 8,
+      "name": "Assembly",
+      "level": "Basics"
+    }
+  ]
+}
