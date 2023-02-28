@@ -12,12 +12,12 @@ const Index = () => {
     <>
       <main className="main">
         <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Portfolio />
+        <Contact />
       </main>
-      <Contact />
-      <About />
-      <Portfolio />
-      <Services />
-      <Skills />
     </>
   )
 }

@@ -9,7 +9,7 @@ const Home = () => {
             <div className="container home__container grid">
                 <div className="home__content grid">
                     <Social />
-                    <div className="home__img"></div>
+                    <div className="home__img" title='My Image'></div>
                     <Data />
                 </div>
                     <ScrollDown/>
