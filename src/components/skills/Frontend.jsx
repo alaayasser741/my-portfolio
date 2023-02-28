@@ -13,12 +13,11 @@ const Frontend = () => {
                     setFirstHalf(data.slice(0, Math.ceil(data.length / 2)));
                     setSecondHalf(data.slice(Math.ceil(data.length / 2), data.length));
                 }
-                console.log(firstHalf)
             })
             .catch(error => {
                 console.log(error);
             });
-    }, []);
+    }, [firstHalf]);
 
     return (
         <div className="skills__content">
