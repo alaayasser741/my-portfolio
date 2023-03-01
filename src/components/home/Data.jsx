@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Data = () => {
   return (
     <div className="home__data">
-      <h1 className="home__title" title='My Name'>Alaa Basher 👋</h1>
+      <h1 className="home__title" title='My Name'>Alaa Abdullah👋</h1>
       <h3 className="home__subtitle" title='Position'>Frontend Developer</h3>
       <p className="home__description" title='سورة التوبة الاية 105'>﴾ And say: "Work (righteousness): Soon will Allah observe your work, and His Messenger, and the Believers: Soon will ye be brought back to the knower of what is hidden and what is open: then will He show you the truth of all that ye did."﴿</p>
       <Link to="/contact" className="button button--flex" title='Say hello'>Say Hello
