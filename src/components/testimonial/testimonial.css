@@ -43,11 +43,3 @@
         padding: 1.25rem 1.5rem;
     }
 }
-
-/* For Medium Devices */
-@media (max-width:768px) {}
-
-@media (max-width:576px) {}
-
-/* For Small Devices */
-@media (max-width:350px) {}
