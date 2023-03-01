@@ -4,22 +4,22 @@ import './qualification.css'
 const Qualification = () => {
     return (
         <section className="section qualification">
-            <h2 className="section__title" title='Services Section Title'>Qualification</h2>
+            <h2 className="section__title" title='Qualification Section Title'>Qualification</h2>
             <span className="section__subtitle">My personal journey</span>
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">
-                    <div className= "qualification__button  button--flex">
-                        <UilGraduationCap size="1.8rem" className="qualification__icon" />Education
+                    <div className="qualification__button  button--flex">
+                        <UilGraduationCap size="1.8rem" title='Education' className="qualification__icon" />Education
                     </div>
                     <div className="qualification__button  button--flex">
-                        <UilBriefcaseAlt size="1.8rem" className="qualification__icon" />Experience
+                        <UilBriefcaseAlt size="1.8rem" title='Experience' className="qualification__icon" />Experience
                     </div>
                 </div>
                 <div className="qualification__section">
                     <div className="qualification__content">
-                        <div className="qualification__data">
-                            <div>
+                        <div className="qualification__data" title='Education Computer Science'>
+                            <div >
                                 <h3 className="qualification__title">Computer Science</h3>
                                 <span className="qualification__subtitle">Egypt - Mansoura University</span>
                                 <div className="qualification__calender">
@@ -32,7 +32,7 @@ const Qualification = () => {
                             </div>
                         </div>
 
-                        <div className="qualification__data">
+                        <div className="qualification__data" title='Experience Frontend Development'>
                             <div></div>
 
                             <div>
