@@ -32,32 +32,32 @@ const Header = () => {
                     <ul className="nav__list grid">
                         {/* Home */}
                         <li className="nav__item">
-                            <Link to="/" onClick={() => { setActiveNav("#Home") }} className={activeNav === "#Home" ? "nav__link active-link" : "nav__link"}>
+                            <Link to="/" className="nav__link">
                                 <UilEstate className="nav__icon" />Home</Link>
                         </li>
                         {/* About */}
                         <li className="nav__item">
-                            <Link to="/#About" onClick={() => { setActiveNav("#About"); handleClick(); }} className={activeNav === "#About" ? "nav__link active-link" : "nav__link"}>
+                            <Link to="/#About" onClick={handleClick} className="nav__link">
                                 <UilUser className="nav__icon" />About</Link>
                         </li>
                         {/* Skills */}
                         <li className="nav__item">
-                            <Link to="/#Skills" onClick={() => { setActiveNav("#Skills"); handleClick(); }} className={activeNav === "#Skills" ? "nav__link active-link" : "nav__link"}>
+                            <Link to="/#Skills" onClick={handleClick} className="nav__link">
                                 <UilFileAlt className="nav__icon" />Skills</Link>
                         </li>
                         {/* Services */}
                         <li className="nav__item">
-                            <Link to="/#Services" onClick={() => { setActiveNav("#Services"); handleClick(); }} className={activeNav === "#Services" ? "nav__link active-link" : "nav__link"}>
+                            <Link to="/#Services" onClick={handleClick} className="nav__link">
                                 <UilSuitcaseAlt className="nav__icon" />Services</Link>
                         </li>
                         {/* Portfolio */}
                         <li className="nav__item">
-                            <Link to="/#Portfolio" onClick={() => { setActiveNav("#Portfolio"); handleClick(); }} className={activeNav === "#Portfolio" ? "nav__link active-link" : "nav__link"}>
+                            <Link to="/#Portfolio" onClick={handleClick} className="nav__link">
                                 <UilImage className="nav__icon" />Portfolio</Link>
                         </li>
                         {/* Contact */}
                         <li className="nav__item">
-                            <Link to="/contact" onClick={() => { setActiveNav("#contact") }} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
+                            <Link to="/contact" className="nav__link">
                                 <UilMessage className="nav__icon" />Contact</Link>
                         </li>
                     </ul>
