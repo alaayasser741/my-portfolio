@@ -7,7 +7,8 @@ import Services from '../components/services/Services';
 import Skills from '../components/skills/Skills';
 import Qualification from '../components/qualification/Qualification';
 import Testimonial from '../components/testimonial/Testimonial';
-import Footer from '../components/footer/Footer'
+import Footer from '../components/footer/Footer';
+import ScrollUp from '../components/scrollUp/ScrollUp';
 const Index = () => {
   return (
     <>
@@ -20,8 +21,9 @@ const Index = () => {
         <Testimonial />
         <Portfolio />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
+      <ScrollUp />
     </>
   )
 }

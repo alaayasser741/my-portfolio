@@ -135,7 +135,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: var(--main-color);
+  background: var(--text-color);
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -145,11 +145,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background: #666;
+  background: var(--text-color);
 }
 
 p,
-span{
+span {
   color: #999;
 }
 
@@ -216,9 +216,6 @@ span{
     margin-block-end: var(--mb-3);
   }
 }
-
-@media (max-width:576px) {}
-
 /* For Small Devices */
 @media (max-width:350px) {
   :root {
