@@ -15,6 +15,7 @@
     color: var(--title-color);
     margin: 0 var(--mb-0-1);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .qualification__button:hover {

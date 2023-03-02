@@ -141,6 +141,7 @@ html::-webkit-scrollbar-thumb {
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
+  transition: 0.3s;
 }
 
 html::-webkit-scrollbar-thumb:hover {
@@ -245,6 +246,7 @@ span{
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  transition: 0.3s;
 }
 
 .button:hover {
