@@ -1,3 +1,5 @@
+import Work0 from "../../assets/smartshop.png"
+import Work01 from "../../assets/tastTreat.png"
 import Work1 from "../../assets/premedi.png"
 import Work2 from "../../assets/BookStore.png"
 import Work3 from "../../assets/GroxiStore.png"
@@ -15,9 +17,19 @@ import Work14 from "../../assets/fourCard.png"
 
 export const Data = [
     {
+        id: 0,
+        image: Work0,
+        title: "Smart Shop",
+        demo: "https://smart-shop-fashion.netlify.app/",
+    }, {
         id: 1,
         image: Work1,
         title: "Premedi",
+        demo: "https://alaayasser741.github.io/premedi/",
+    }, {
+        id: 0o1,
+        image: Work01,
+        title: "Tast Treat",
         demo: "https://alaayasser741.github.io/premedi/",
     },
     {

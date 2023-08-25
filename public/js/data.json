@@ -39,6 +39,21 @@
       "id": 8,
       "name": "Ajax",
       "level": "Intermediate"
+    },
+    {
+      "id": 9,
+      "name": "Redux Toolkit",
+      "level": "Intermediate"
+    },
+    {
+      "id": 10,
+      "name": "Next js",
+      "level": "Intermediate"
+    },
+    {
+      "id": 11,
+      "name": "Tailwind CSS",
+      "level": "Intermediate"
     }
   ],
   "CS": [
