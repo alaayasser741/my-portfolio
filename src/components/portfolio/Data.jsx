@@ -17,7 +17,7 @@ import Work14 from "../../assets/fourCard.png"
 
 export const Data = [
     {
-        id: 0,
+        id: 111,
         image: Work0,
         title: "Smart Shop",
         demo: "https://smart-shop-fashion.netlify.app/",
@@ -27,7 +27,7 @@ export const Data = [
         title: "Premedi",
         demo: "https://alaayasser741.github.io/premedi/",
     }, {
-        id: 0o1,
+        id: 122,
         image: Work01,
         title: "Tast Treat",
         demo: "https://alaayasser741.github.io/premedi/",
