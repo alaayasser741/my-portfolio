@@ -186,3 +186,28 @@
         padding-inline-start: 3.5rem;
     }
 }
+.palestine{
+    position: fixed;
+    top: 1rem;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    width: 130px;
+    z-index: 9999;
+}
+@media (max-width:350px){
+    .palestine{
+        top: unset;
+        bottom: 4rem;
+        left: -5px;
+        width: 90px;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+        z-index: 10;
+}
+}
