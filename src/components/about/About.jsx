@@ -44,7 +44,7 @@ const About = () => {
                 ></path>
               </svg>
           </a> */}
-          <a href={'https://drive.google.com/file/d/18dH5Mz_ll7yJDSw6w5myL3fj4EcLPJQJ/view?usp=drive_link'} target='_blank' className="button button--flex" rel="noreferrer">Download CV
+          <a href={'https://drive.google.com/file/d/1TBHNOOjQu0LnhTRwO3S4qkRLowztvAoA/view?usp=drive_link'} target='_blank' className="button button--flex" rel="noreferrer">Download CV
           <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
