@@ -44,29 +44,17 @@ const Portfolio = () => {
         className="portfolio__container"
       >
         {items &&
-          items.map(({ id, images, title, demo }) => {
+          items.map(({ id, previewImage, title }) => {
             return (
               <SwiperSlide className="portfolio__card" key={id}>
                 <img
-                  src={images && images[0]}
+                  src={previewImage && previewImage}
                   alt="Profile_image"
                   title={title}
                   className="portfolio__img"
                 />
                 <div className="portfolio__info">
                   <h3 className="portfolio__name">{title}</h3>
-                  {/* <a
-                    href={demo}
-                    title={title + " Link"}
-                    className="portfolio__demo"
-                    target="_blank"
-                  >
-                    Demo{" "}
-                    <UilArrowRight
-                      className="portfolio__demo-icon"
-                      size="1rem"
-                    />
-                  </a> */}
 
                   <Link
                     title={title + " Link"}

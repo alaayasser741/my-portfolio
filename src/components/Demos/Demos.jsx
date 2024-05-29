@@ -25,7 +25,8 @@ const Demos = () => {
   }
 
   return (
-    <Fullpage
+    <section>
+      <Fullpage
       licenseKey={"YOUR_KEY_HERE"}
       scrollingSpeed={1000}
       render={({ state, fullpageApi }) => {
@@ -62,6 +63,7 @@ const Demos = () => {
         );
       }}
     />
+    </section>
   );
 };
 

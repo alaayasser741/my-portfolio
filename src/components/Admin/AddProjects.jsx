@@ -12,6 +12,7 @@ const AddProject = () => {
     demo: "",
     video: null,
     images: [],
+    previewImage: null,
   });
   const [imageFiles, setImageFiles] = useState([]);
   const [videoFile, setVideoFile] = useState(null);
@@ -61,6 +62,10 @@ const AddProject = () => {
     setVideoFile(e.target.files[0]);
   };
 
+  const handlePreviewImageChange = (e) => {
+    setFormData((prevData) => ({ ...prevData, previewImage: e.target.files[0] }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -68,10 +73,11 @@ const AddProject = () => {
       !formData.title ||
       !formData.demo ||
       imageFiles.length === 0 ||
-      !videoFile
+      !videoFile ||
+      !formData.previewImage
     ) {
       toast.error(
-        "Please fill in all fields and upload at least one image and a video.",
+        "Please fill in all fields and upload at least one image, a video, and a preview image.",
         {
           position: "top-right",
           autoClose: 3000,
@@ -91,10 +97,14 @@ const AddProject = () => {
       // Upload video
       const videoUrl = await uploadFile(videoFile, "videos");
 
+      // Upload preview image
+      const previewImageUrl = await uploadFile(formData.previewImage, "previewImages");
+
       const projectData = {
         ...formData,
         images: imageUrls,
         video: videoUrl,
+        previewImage: previewImageUrl,
         createdAt: new Date(),
       };
 
@@ -105,7 +115,7 @@ const AddProject = () => {
         theme: "colored",
       });
       setIsSubmitting(false);
-      setFormData({ title: "", demo: "", video: null, images: [] });
+      setFormData({ title: "", demo: "", video: null, images: [], previewImage: null });
       setImageFiles([]);
       setVideoFile(null);
       setImagePreviews([]);
@@ -190,6 +200,17 @@ const AddProject = () => {
                     id="video"
                     accept="video/*"
                     onChange={handleVideoChange}
+                    required
+                    className="contact__form-input"
+                  />
+                </div>
+                <div className="contact__form-div">
+                  <label className="contact__form-tag">Preview Image</label>
+                  <input
+                    type="file"
+                    id="previewImage"
+                    accept="image/*"
+                    onChange={handlePreviewImageChange}
                     required
                     className="contact__form-input"
                   />
