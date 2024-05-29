@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useFirestore } from "../../firebase/useFirestore";
 import { uploadFile } from "../../firebase/firebaseStorage";
 import "./customerReview.css";
+import { set } from "firebase/database";
 // https://i.pinimg.com/564x/97/43/ec/9743ecac80966a95e9d328c08b995c04.jpg
 const CustomerReview = () => {
   const { addItem } = useFirestore("reviews");
@@ -15,6 +16,8 @@ const CustomerReview = () => {
     avatar: null,
   });
   const [avatarPreview, setAvatarPreview] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const fileInputRef = useRef(null);
 
   const handleChange = (e) => {
@@ -48,6 +51,7 @@ const CustomerReview = () => {
         return;
       }
 
+      setIsSubmitting(true);
       let avatarUrl = null;
       if (formData.avatar) {
         try {
@@ -58,6 +62,7 @@ const CustomerReview = () => {
             autoClose: 3000,
             theme: "colored",
           });
+          setIsSubmitting(false);
           return;
         }
       }
@@ -86,6 +91,7 @@ const CustomerReview = () => {
         review: "",
       });
       setAvatarPreview(null);
+      setIsSubmitting(false);
     } catch (error) {
       toast.error(
         "There was an error submitting your review. Please try again.",
@@ -95,6 +101,7 @@ const CustomerReview = () => {
           theme: "colored",
         }
       );
+      setIsSubmitting(false);
     }
   };
 
@@ -201,10 +208,11 @@ const CustomerReview = () => {
 
             <button
               type="submit"
-              className="button button--flex"
+              className={`button button--flex ${isSubmitting && "disabled_button" }`}
               title="Submit Review"
+              disabled={isSubmitting}
             >
-              Submit Review
+              {isSubmitting ? "Submitting..." : "Submit Review"}
             </button>
           </form>
         </div>
