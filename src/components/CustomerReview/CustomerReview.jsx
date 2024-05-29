@@ -4,7 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { useFirestore } from "../../firebase/useFirestore";
 import { uploadFile } from "../../firebase/firebaseStorage";
 import "./customerReview.css";
-import { set } from "firebase/database";
 // https://i.pinimg.com/564x/97/43/ec/9743ecac80966a95e9d328c08b995c04.jpg
 const CustomerReview = () => {
   const { addItem } = useFirestore("reviews");

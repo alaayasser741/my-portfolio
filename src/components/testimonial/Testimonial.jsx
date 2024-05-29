@@ -51,10 +51,10 @@ const Testimonial = () => {
                 title={"Comment from" + name}
               >
                 <img
-                  src={avatar}
-                  alt="Profile-image"
+                  src={avatar ? avatar : "https://i.pinimg.com/564x/97/43/ec/9743ecac80966a95e9d328c08b995c04.jpg"}
                   title={name}
                   className="testimonial__img"
+                  alt="Profile"
                 />
                 <h3 className="testimonial__name">{name}</h3>
                 <p className="testimonial__description">{review}</p>
