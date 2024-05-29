@@ -1,8 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
 import Header from "./components/header/Header";
 import Index from "./pages/Index";
 import Contact from "./components/contact/Contact";
+import AddProjects from "./components/Admin/AddProjects";
+import CustomerReview  from "./components/CustomerReview/CustomerReview";
+import Demos  from "./components/Demos/Demos";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 const App = () => {
   return (
@@ -11,6 +14,9 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Index/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/add-projects" element={<AddProjects/>}/>
+        <Route path="/customer-review" element={<CustomerReview/>}/>
+        <Route path="/demos/:id" element={<Demos/>}/>
       </Routes>
     </Router>
   );

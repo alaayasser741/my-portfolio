@@ -1,6 +1,5 @@
 {
-  "Frontend": [
-    {
+  "Frontend": [{
       "id": 1,
       "name": "HTML",
       "level": "Advanced"
@@ -18,7 +17,7 @@
     {
       "id": 4,
       "name": "Bootstrap",
-      "level": "Intermediate"
+      "level": "Advanced"
     },
     {
       "id": 5,
@@ -28,7 +27,7 @@
     {
       "id": 6,
       "name": "React",
-      "level": "Intermediate"
+      "level": "Advanced"
     },
     {
       "id": 7,
@@ -38,7 +37,7 @@
     {
       "id": 8,
       "name": "Ajax",
-      "level": "Intermediate"
+      "level": "Advanced"
     },
     {
       "id": 9,
@@ -53,11 +52,25 @@
     {
       "id": 11,
       "name": "Tailwind CSS",
-      "level": "Intermediate"
+      "level": "Advanced"
+    },
+    {
+      "id": 12,
+      "name": "Material UI",
+      "level": "Advanced"
+    },
+    {
+      "id": 13,
+      "name": "PHP",
+      "level": "Basics"
+    },
+    {
+      "id": 14,
+      "name": "Laravel",
+      "level": "Basics"
     }
   ],
-  "CS": [
-    {
+  "CS": [{
       "id": 1,
       "name": "Problem Solving",
       "level": "Intermediate"
@@ -95,6 +108,24 @@
     {
       "id": 8,
       "name": "Assembly",
+      "level": "Basics"
+    },
+    {
+      "id": 9,
+      "name": "Compiler",
+      "level": "Basics"
+    },
+    {
+      "id": 10,
+      "name": "Computer Graphics",
+      "level": "Basics"
+    }, {
+      "id": 11,
+      "name": "Computer Architecture",
+      "level": "Basics"
+    }, {
+      "id": 12,
+      "name": "Software Engineering",
       "level": "Basics"
     }
   ]
