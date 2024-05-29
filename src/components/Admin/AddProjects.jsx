@@ -218,10 +218,11 @@ const AddProject = () => {
                 </div>
                 <button
                   type="submit"
-                  className="button button--flex"
+                  className={`button button--flex ${isSubmitting && 'disabled_button'}`}
                   title="Add Project"
+                  disabled={isSubmitting}
                 >
-                  Add Project
+                  {isSubmitting ? "Please wait..." : "Add Project"}
                 </button>
               </form>
             </div>
